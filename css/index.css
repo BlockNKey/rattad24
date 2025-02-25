@@ -1,0 +1,125 @@
+body .main-container {
+  padding: 20px;
+}
+
+body .main-container .categories {
+  padding-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+body .main-container .categories .category {
+  padding: 10px 12px 8px 12px;
+}
+
+body .main-container .categories .category.active {
+  border: 1.5px solid #FF6A00;
+  background-color: #FF6A000D;
+  color: #FF6A00;
+  border-radius: 99px;
+}
+
+body .product-container .product-item {
+  padding: 22px 20px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #EAEAEA;
+  position: relative;
+}
+
+body .product-container .product-item .headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body .product-container .product-item .headline .main-info .info {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3px;
+}
+
+body .product-container .product-item .headline .main-info .info .status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+body .product-container .product-item .headline .main-info .info .status.available {
+  background-color: #4DB748;
+}
+
+body .product-container .product-item .headline .main-info .info .status.unavailable {
+  background-color: #FF6A00;
+}
+
+body .product-container .product-item .headline .main-info .tags {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding-top: 9px;
+}
+
+body .product-container .product-item .headline .main-info .tags .tag {
+  padding: 3px 6px 3px 6px;
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+
+body .product-container .product-item .headline .main-info .tags .tag.orange {
+  background-color: #FF6A00;
+}
+
+body .product-container .product-item .headline .main-info .tags .tag.blue {
+  background-color: #82A3AC;
+}
+
+body .product-container .product-item .headline .main-info .tags .tag.gray {
+  background-color: #CDC5C0;
+}
+
+body .product-container .product-item .headline .product-image {
+  border-radius: 5px;
+}
+
+body .product-container .product-item .description {
+  padding-top: 13px;
+}
+
+body .product-container .product-item .description .first-line {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+body .product-container .product-item .description .second-line {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding-top: 9px;
+  align-items: end;
+}
+
+body .product-container .product-item .description .second-line .price {
+  font-weight: 500;
+  font-size: 16.63px;
+  letter-spacing: -0.3px;
+}
+
+body .product-container .product-item .description .second-line .price .unit {
+  font-weight: 400;
+}
+
+body .product-container .product-item .favourite {
+  position: absolute;
+  background-color: #E9E9E9;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+}
