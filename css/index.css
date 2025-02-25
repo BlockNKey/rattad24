@@ -19,6 +19,10 @@ body .main-container .categories .category.active {
   border-radius: 99px;
 }
 
+body .product-container {
+  padding-bottom: 100px;
+}
+
 body .product-container .product-item {
   padding: 22px 20px;
   border-width: 1px 0px 1px 0px;
