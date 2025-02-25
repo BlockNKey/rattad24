@@ -1,0 +1,47 @@
+body .appbar {
+  position: relative;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+body .appbar .title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body .main-wrapper {
+  padding: 30px 20px 30px 20px;
+  flex-grow: 1;
+}
+
+body .main-wrapper .partner-select {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  padding-bottom: 18px;
+}
+
+body .main-wrapper .partner-select .option {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+body .main-wrapper .delete-but {
+  color: #FF6A00;
+  padding-top: 10px;
+}
+
+body .save-but-wrapper {
+  padding: 20px 20px 42px 20px;
+}
+
+body .save-but-wrapper .save-but {
+  width: 100%;
+  border-radius: 6px;
+  background-color: #FF6A00;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+}

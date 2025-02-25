@@ -3,11 +3,15 @@
 }
 
 body {
-  font-family: "Graphik";
+  font-family: "Graphik LCG";
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: -0.25px;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 
   position: relative;
   margin: 0px;
@@ -162,4 +166,57 @@ body .tabbar .tab-item {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: -0.25px;
+}
+
+.radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.radio::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.radio.on {
+  background: #FF6A00;
+}
+
+.radio.off {
+  background: #F5F5F5;
+}
+
+.radio.off::before {
+  opacity: 0;
+}
+
+.dropdown-wrapper {
+  padding-bottom: 16px;
+}
+
+.dropdown-wrapper .dropdown {
+  padding: 10px 12px 8px 12px;
+  background-color: #FCFCFC;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  position: relative;
+}
+
+.dropdown-wrapper .dropdown img {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
